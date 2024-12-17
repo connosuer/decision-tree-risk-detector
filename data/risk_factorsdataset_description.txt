@@ -1,0 +1,40 @@
+
+    Dataset: S&P 500 Risk Factors Dataset (2019-2024)
+    
+    Description:
+    This dataset contains daily market data and derived risk factors for 3 major S&P 500 companies 
+    from 2019 to 2024. The data combines raw market data from Yahoo Finance with engineered features 
+    for risk analysis.
+
+    Dataset Statistics:
+    - Total Records: 2958
+    - Number of Stocks: 3
+    - Date Range: 2020-01-02 00:00:00 to 2023-11-30 00:00:00
+    - Frequency: Daily
+
+    Features:
+    1. Market Data:
+       - Date: Trading date
+       - Ticker: Stock symbol
+       - Open/High/Low/Close/Adj Close: Daily price data
+       - Volume: Daily trading volume
+
+    2. Risk Metrics:
+       - Drawdown: Price decline from peak (%)
+       - Drawdown_Duration: Length of current drawdown period
+       - Volatility_21: 21-day rolling volatility
+       - Volatility_63: 63-day rolling volatility
+
+    3. Technical Indicators:
+       - MA_50: 50-day moving average
+       - MA_200: 200-day moving average
+       - MA_Ratio: Ratio of MA_50 to MA_200
+       - Trend_Strength: Combined momentum and volatility indicator
+
+    4. Target Variable:
+       - Target: Binary indicator for significant drawdown events
+
+    Source: Raw data from Yahoo Finance
+    Time Period: January 2019 - December 2024
+    Frequency: Daily
+    
